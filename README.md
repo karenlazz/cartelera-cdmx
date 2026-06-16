@@ -103,8 +103,8 @@ Las detecciones se guardan con `moderation_status = detected`. El admin permite 
 1. Sube el repositorio a GitHub.
 2. Importa el proyecto en Vercel.
 3. Configura las variables de entorno.
-4. Verifica que `vercel.json` cree los cron jobs:
-   - actualización cada 12 horas.
+4. Verifica que `vercel.json` cree los cron jobs compatibles con Vercel Hobby:
+   - actualización diaria.
    - newsletter todos los lunes.
 
 ## Siguientes mejoras

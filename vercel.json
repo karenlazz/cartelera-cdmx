@@ -2,7 +2,7 @@
   "crons": [
     {
       "path": "/api/cron/update-sources",
-      "schedule": "0 */12 * * *"
+      "schedule": "0 14 * * *"
     },
     {
       "path": "/api/cron/newsletter",
