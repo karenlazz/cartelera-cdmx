@@ -19,10 +19,10 @@ on conflict (name) do update set
 
 insert into public.sources (name, url, source_type, priority, update_frequency, active, config)
 values
-  ('MUAC sitio oficial', 'https://muac.unam.mx/', 'official_site', 10, '12h', true, '{"museum_name": "Museo Universitario Arte Contemporáneo"}'),
-  ('Museo Tamayo sitio oficial', 'https://www.museotamayo.org/', 'official_site', 10, '12h', true, '{"museum_name": "Museo Tamayo"}'),
-  ('Museo Jumex sitio oficial', 'https://www.fundacionjumex.org/', 'official_site', 10, '12h', true, '{"museum_name": "Museo Jumex"}'),
-  ('MUNAL sitio oficial', 'https://www.munal.mx/', 'official_site', 10, '12h', true, '{"museum_name": "Museo Nacional de Arte"}'),
+  ('MUAC sitio oficial', 'https://muac.unam.mx/exposiciones', 'official_site', 10, '12h', true, '{"museum_name": "Museo Universitario Arte Contemporáneo"}'),
+  ('Museo Tamayo sitio oficial', 'https://www.museotamayo.org/exposiciones', 'official_site', 10, '12h', true, '{"museum_name": "Museo Tamayo"}'),
+  ('Museo Jumex sitio oficial', 'https://www.fundacionjumex.org/es/exposiciones', 'official_site', 10, '12h', true, '{"museum_name": "Museo Jumex"}'),
+  ('MUNAL sitio oficial', 'https://munal.mx/es/exposiciones', 'official_site', 10, '12h', true, '{"museum_name": "Museo Nacional de Arte"}'),
   ('Museo de Arte Moderno sitio oficial', 'https://mam.inba.gob.mx/', 'official_site', 10, '12h', true, '{"museum_name": "Museo de Arte Moderno"}'),
   ('Museo Franz Mayer sitio oficial', 'https://franzmayer.org.mx/', 'official_site', 10, '12h', true, '{"museum_name": "Museo Franz Mayer"}'),
   ('San Ildefonso sitio oficial', 'https://www.sanildefonso.org.mx/', 'official_site', 10, '12h', true, '{"museum_name": "Antiguo Colegio de San Ildefonso"}'),
