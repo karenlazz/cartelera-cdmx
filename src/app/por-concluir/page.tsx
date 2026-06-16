@@ -3,6 +3,8 @@ import { ExhibitionCard } from "@/components/exhibition-card";
 import { SectionHeading } from "@/components/section-heading";
 import { listClosingSoonExhibitions } from "@/lib/data";
 
+export const dynamic = "force-dynamic";
+
 export default async function ClosingPage() {
   const exhibitions = await listClosingSoonExhibitions();
 
