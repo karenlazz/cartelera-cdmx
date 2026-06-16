@@ -79,7 +79,7 @@ async function persistDetectedExhibitions(candidates: DetectedExhibition[]) {
       image_url: candidate.image_url ?? null,
       source_url: candidate.source_url,
       source_name: candidate.source_name,
-      moderation_status: "detected",
+      moderation_status: shouldAutoApprove(candidate) ? "approved" : "detected",
       tags: candidate.tags ?? [],
       raw_payload: candidate.raw_payload ?? {},
       last_checked_at: new Date().toISOString()
@@ -121,4 +121,8 @@ function parseFrequency(value: string) {
   const amount = Number(match[1]);
   const unit = match[2].toLowerCase();
   return unit === "h" ? amount * 60 * 60 * 1000 : amount * 60 * 1000;
+}
+
+function shouldAutoApprove(candidate: DetectedExhibition) {
+  return Boolean(candidate.start_date && candidate.end_date && candidate.tags?.includes("oficial"));
 }
