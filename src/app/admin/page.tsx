@@ -5,6 +5,7 @@ import { SourceLogPanels } from "@/components/admin/source-log-panels";
 import { SubscriberPanel } from "@/components/admin/subscriber-panel";
 import { SectionHeading } from "@/components/section-heading";
 import { listAdminExhibitions, listMuseums, listSources, listSubscribers, listUpdateLogs } from "@/lib/data";
+export const dynamic = "force-dynamic";
 
 export default async function AdminPage({
   searchParams
