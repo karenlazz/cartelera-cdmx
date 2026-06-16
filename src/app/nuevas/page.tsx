@@ -3,6 +3,8 @@ import { ExhibitionCard } from "@/components/exhibition-card";
 import { SectionHeading } from "@/components/section-heading";
 import { listNewExhibitions } from "@/lib/data";
 
+export const dynamic = "force-dynamic";
+
 export default async function NewPage() {
   const exhibitions = await listNewExhibitions();
 
