@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Suspense } from "react";
 import { ArrowRight, CalendarDays, Sparkles, Timer } from "lucide-react";
 import { ExhibitionCard } from "@/components/exhibition-card";
 import { FilterBar } from "@/components/filter-bar";
@@ -56,7 +57,9 @@ export default async function Home({
       </section>
 
       <section className="mx-auto max-w-7xl px-4 pb-12 sm:px-6">
-        <FilterBar museums={museums} boroughs={boroughs} />
+        <Suspense fallback={<div className="h-20 border border-ink/10 bg-white" />}>
+          <FilterBar museums={museums} boroughs={boroughs} />
+        </Suspense>
       </section>
 
       <section className="mx-auto max-w-7xl px-4 pb-16 sm:px-6">
