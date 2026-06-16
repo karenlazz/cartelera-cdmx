@@ -4,6 +4,8 @@ import { SectionHeading } from "@/components/section-heading";
 import { fallback } from "@/lib/format";
 import { listMuseums } from "@/lib/data";
 
+export const dynamic = "force-dynamic";
+
 export default async function MuseumsPage() {
   const museums = await listMuseums();
 
