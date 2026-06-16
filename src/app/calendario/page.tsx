@@ -3,6 +3,8 @@ import { EmptyState } from "@/components/empty-state";
 import { SectionHeading } from "@/components/section-heading";
 import { listPublicExhibitions } from "@/lib/data";
 
+export const dynamic = "force-dynamic";
+
 export default async function CalendarPage() {
   const exhibitions = await listPublicExhibitions();
 
